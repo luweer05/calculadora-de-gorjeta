@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,30 +11,63 @@
     </header>
 
     <main>
-        <section class="informaçoes">
+        <section class="informacoes">
             <form action="">
+                
                 <div class="conta">
                     <label for="conta">Conta</label>
+                    
                     <div>
-                        <img src="./images/icon-dollar.svg" alt="icone do cifrão">
+                        <img src="./images/icon-dollar.svg" alt="Ícone do cifrão">
                         <input type="number" name="conta" id="conta">
                     </div>
                 </div>
 
-                <div class="gorjeta"></div>
-                <label for="gorjeta">Selecione a gorjeta %</label>
-            
-                <div>
-              <input type="button" value="5%">
-              <input type="button" value="10%">
-              <input type="button" value="15%">
-              <input type="button" value="25%">
-              <input type="button" value="30%">
-              <input type="number" value="outra" id="outra">
+                <div class="gorjeta">
+                    <label for="gorjeta">Selecione a gorjeta %</label>
+
+                    <div>
+                        <input type="button" value="5%">
+                        <input type="button" value="10%">
+                        <input type="button" value="15%">
+                        <input type="button" value="25%">
+                        <input type="button" value="30%">
+                        <input type="number" placeholder="Outra" id="outra">
+                    </div>
                 </div>
+
+                <div class="pessoas">
+                    <label for="pessoas">Quantidade de pessoas</label>
+                    
+                    <p>Não pode ser zero</p>
+
+                    <div>
+                        <img src="./images/icon-person.svg" alt="Ícone de pessoa">
+                        <input type="number" name="pessoas" id="pessoas" placeholder="0">
+                    </div>
+                </div>
+
             </form>
+        </section>
+
+        <section class="gorjeta-total">
+            <div class="gorjeta-total">
+                <p>
+                    <strong>Gorjeta</strong> <br>
+                    / pessoa
+                </p>
+              
+                <strong>$ 0.00</strong>
+
+                <div class="total">
+                    <p>
+                        <strong>Total</strong> <br>
+                        /pessoa
+                    </p>
+                    <strong>$ 0.00</strong>
+                </div>
+            </div>
         </section>
     </main>
 </body>
-
 </html>
