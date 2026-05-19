@@ -36,17 +36,20 @@ main {
 
 }
 
-.conta {
+.conta,
+.gorjeta {
     margin-bottom: 2rem;
 }
 
-.conta label
-.gorjeta label {
+.conta label,
+.gorjeta label,
+.pessoas label {
     color: var(--green-500);
     font-weight: 700;
 }
 
-.conta div {
+.conta div,
+.pessoas div {
     border: 1px solid #440808;
     margin-top: 0.4rem;
     background-color: var(--green-100);
@@ -58,7 +61,8 @@ main {
     border-radius: 0.3125rem;
 }
 
-.conta input {
+.conta input,
+.pessoas input {
     border: none;
     text-align: right;
     width: 100%;
@@ -75,10 +79,12 @@ main {
     color: var(--green-300);
 }
 
-.conta:has(input:focus) div{
+.conta:has(input:focus) div,
+.pessoas:has(input:focus) div{
      outline: 2px solid var(--light-green);
 
 }
+
 
 .gorjeta div {
     border: 1px solid #e0f2f1;
@@ -88,7 +94,24 @@ main {
     gap: 1rem;
 }
 
+.gorjeta input {
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: none;
+    tect-align: center;
+    outline: none;
+    padding-block: 0.4rem;
+    border-radius: 0.3125rem ;
+    background-color: var(--green-800);
+    color: var(--green-100);
+}
 .gorjeta #outra {
     width: 100%;
+    background-color: var(--green-100);
+    color: var(--green-800);
 
+}
+
+.gorjeta #outra::placeholder {
+    color: var(--green-300)
 }
