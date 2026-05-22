@@ -6,38 +6,40 @@
 }
 
 :root {
-    --green-100: #641010;
-    --green-200: #f3f9fa;
-    --green-300: #e0f2f1;
-    --green-400: #80cbc4;
-    --green-500: #440808;
-    --green-600: #acacac;
-    --green-700: #f3f9fa;
-    --green-800: #000000;
-
-    --light-green: #cdefde;
-    --white: #ffffff;
+   --green-100: #f3f9fa;
+    --green-200: #c5e4e7;
+    --green-300: #9ebbbd;
+    --green-400: #7f9d9f;
+    --green-500: #5e7a7d;
+    --green-600: #547878;
+    --green-700: #3d6666;
+    --green-800: #00474b;
+    --light-green: #26c2ae;
+    --white: #FFFFFF;
+    --green-hover: #9fe8df;
+    --danger: #e17457;
 }
 
 body {
-    background-color: #fdefd1;
+    background-color: var(--green-200);
 }
 
 header {
-    border: 1px solid #4a2512;
-    display: flex;
+   display:flex;
     justify-content: center;
     padding-block: 2.8rem;
 }
 
 main {
-    background-color: var(--green-500);
+   background-color: var(--white);
     padding: 2rem;
+    border-radius: 1.5625rem 1.5625rem 0 0;
 
 }
 
 .conta,
-.gorjeta {
+.gorjeta,
+.pessoas {
     margin-bottom: 2rem;
 }
 
@@ -50,14 +52,12 @@ main {
 
 .conta div,
 .pessoas div {
-    border: 1px solid #440808;
     margin-top: 0.4rem;
     background-color: var(--green-100);
     padding: 0.4rem 1.2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     border-radius: 0.3125rem;
 }
 
@@ -75,7 +75,8 @@ main {
     outline: none;
 }
 
-.conta input::placeholder {
+.conta input::placeholder
+.pessoas input::placeholder  {
     color: var(--green-300);
 }
 
@@ -87,7 +88,6 @@ main {
 
 
 .gorjeta div {
-    border: 1px solid #e0f2f1;
     margin-top: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -98,13 +98,15 @@ main {
     font-size: 1.5rem;
     font-weight: 700;
     border: none;
-    tect-align: center;
+    text-align: center;
     outline: none;
     padding-block: 0.4rem;
     border-radius: 0.3125rem ;
     background-color: var(--green-800);
     color: var(--green-100);
 }
+
+
 .gorjeta #outra {
     width: 100%;
     background-color: var(--green-100);
@@ -114,4 +116,45 @@ main {
 
 .gorjeta #outra::placeholder {
     color: var(--green-300)
+}
+
+.pessoas #erro {
+    font-size: 0.75rem;
+    color: var(--danger);
+    font-weight: 700;
+    display: none;
+}
+
+.resultados {
+    background-color: var(--green-800);
+    border-radius: 0.9375rem;
+    padding: 1.5rem;
+}
+
+.resultados div {
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resultados p {
+    color: var(--green-400);
+    font-size: 0.8125rem;
+
+}
+
+.resultados p strong {
+    color: var(--white);
+    font-size:  1rem;
+}
+
+.resultados div > strong {
+    color: var(--light-green);
+    font-size: 2rem;
+    
+}
+
+.resultados .gorjeta-total {
+    margin-bottom: 1.25rem;
 }
